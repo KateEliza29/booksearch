@@ -1,0 +1,156 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background: url("images/bokeh.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (min-width: 750px) {
+    body {
+        background: url("images/bokehLarge.jpg");
+    }
+}
+
+h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 4em;
+    position: relative;
+    left: -50px;
+}
+
+span {
+    font-family: 'Langar', cursive;
+    position: relative;
+    left: 70px;
+}
+
+.submit {
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    margin: 20px 10px;
+}
+
+/* Main Section */
+main {
+    width: 95vw;
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9));
+    margin: 20px auto;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 750px) {
+    main {
+        width: 50vw;
+    }
+} 
+
+/* Header */
+
+    header {
+        width: 95%;
+        height: 200px;
+        border-radius: 10px;
+        margin: 10px 10px 50px 10px;
+        text-align: center;
+    }
+
+/* Form */
+    form {
+        width: 95%;
+        margin: auto;
+    }
+
+    fieldset {
+        border: none;
+        width: 95%;
+    }
+    
+
+    input[type="radio"],
+    input[type="checkbox"],
+    input[type="number"], 
+    label {
+        margin: 10px 10px;
+        cursor: pointer;
+    }
+
+
+    legend {
+        font-family: 'Langar', cursive;
+        font-size: 1.4em;
+    }
+
+/* Results Page */
+details {
+    width: 95%;
+}
+
+summary {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(174,180,184, 0.6), rgb(174,180,184, 0.4));
+    box-shadow: 0px 0px 3px white;
+    border-radius: 5px;
+    font-family: 'Langar', cursive;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 0px 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 15px;
+    justify-items: center;
+}
+
+
+
+.container a {
+    grid-area: 1 / 1 / 2 / 2;
+    margin-bottom: 50px;
+}
+
+
+.container .info {
+    grid-area: 1 / 2 / 2 / 3;
+    margin: 0px 0px 50px 30px;
+}
+
+.container .desc {
+    grid-area: 2 / 1 / 3 / 3;
+    text-align: center;
+}
+
+footer {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    background: black;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    color: white;
+}
+
+footer a {
+    color: grey;
+}
+
+footer img {
+    height: 40px;
+}

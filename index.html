@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="booksearch.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Langar&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/thymeLogo.png">
+    <title>Which Book?</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Which<br><span>Book?</span></h1>
+            <br>
+            <hr>
+        </header>
+
+        <form action="process.php" method="POST">
+            <fieldset>
+                <legend>I would like a book to teach about:</legend>
+                <select id="topics" name="topic">
+                    <optgroup label="Art">
+                        <option id="art" value="art">All Art</option>
+                    </optgroup>
+                    <optgroup label="Computing">
+                        <option id="computing" value="computing">All Computing</option>
+                    </optgroup>
+                    <optgroup label="Cultural Education">
+                        <option id="cultural" value="cultural">All Cultural</option>
+                        <option id="africa" value="africa">Africa</option>
+                        <option id="antarctica" value="africa">Antarctica</option>
+                        <option id="asia" value="asia">Asia</option>
+                        <option id="australia" value="australia">Australia</option>
+                        <option id="europe" value="europe">Europe</option>
+                        <option id="north-america" value="north-america">North America</option>
+                    </optgroup>
+                    <optgroup label="Design and Technology">
+                        <option id="d+t" value="d+t">All D+T</option>
+                    </optgroup>
+                    <optgroup label="English">
+                        <option id="english" value="english">All English</option>
+                        <option id="effect" value="effect">Effect</option>
+                        <option id="phonics" value="phonics">Phonics</option>
+                        <option id="plays" value="plays">Plays</option>
+                        <option id="poems" value="poems">Poems</option>
+                        <option id="punctuation" value="punctuation">Punctuation</option>
+                        <option id="rhyming" value="rhyming">Rhyming</option>
+                        <option id="structure" value="structure">Structure</option>
+                    </optgroup>
+                    <optgroup label="Geography">
+                        <option id="geography" value="geography">All Geography</option>
+                        <option id="location" value="location">Location</option>
+                        <option id="physical" value="physical">Physical</option>
+                    </optgroup>
+                    <optgroup label="History">
+                        <option id="history" value="history">All History</option>
+                        <option id="anglo-saxons" value="anglo-saxons">Anglo-Saxons</option>
+                        <option id="bronze-age" value="bronze-age">Bronze Age</option>
+                        <option id="egyptians" value="egyptians">Egyptians</option>
+                        <option id="events" value="events">Events</option>
+                        <option id="figures" value="figures">Figures</option>
+                        <option id="greek" value="greek">Greek</option>
+                        <option id="iron-age" value="iron-age">Iron Age</option>
+                        <option id="romans" value="romans">Romans</option>
+                        <option id="stone-age" value="stone-age">Stone Age</option>
+                        <option id="victorians" value="victorians">Victorians</option>
+                        <option id="vikings" value="vikings">Vikings</option>
+                    </optgroup>
+                    <optgroup label="Languages">
+                        <option id="languages" value="languages">All Languages</option>
+                    </optgroup>
+                    <optgroup label="Maths">
+                        <option id="maths" value="maths">All Maths</option>
+                        <option id="geometry" value="geometry">Geometry</option>
+                        <option id="measurement" value="measurement">Measurement</option>
+                        <option id="number" value="number">Number</option>
+                        <option id="statistics" value="statistics">Statistics</option>
+                    </optgroup>
+                    <optgroup label="Music">
+                        <option id="music" value="music">All Music</option>
+                    </optgroup>
+                    <optgroup label="Physical Education">
+                        <option id="pe" value="pe">All PE</option>
+                    </optgroup>
+                    <optgroup label="PSHE">
+                        <option id="pshe" value="pshe">All PSHE</option>
+                        <option id="bullying" value="bullying">Bullying</option>
+                        <option id="change" value="change">Change</option>
+                        <option id="change" value="change">Death</option>
+                        <option id="difference" value="difference">Difference</option>
+                        <option id="drugs" value="drugs">Drugs</option>
+                        <option id="family" value="family">Family</option>
+                        <option id="friends" value="friends">Friends</option>
+                        <option id="health" value="health">Health</option>
+                        <option id="mental-health" value="mental-health">Mental Health</option>
+                        <option id="relationships" value="relationships">Relationships</option>
+                        <option id="safety" value="safety">Safety</option>
+                    </optgroup>
+                    <optgroup label="Religion">
+                        <option id="religion" value="religion">All Regligion</option>
+                        <option id="buddhism" value="buddhism">Buddhism</option>
+                        <option id="christianity" value="christianity">Christianity</option>
+                        <option id="hinduism" value="hinduism">Hinduism</option>
+                        <option id="islam" value="islam">Islam</option>
+                        <option id="judaism" value="judaism">Judaism</option>
+                        <option id="sikhism" value="sikhism">Sikhism</option>
+                    </optgroup>
+                    <optgroup label="Science">
+                        <option id="science" value="science">All Science</option>
+                        <option id="animals" value="animals">Animals</option>
+                        <option id="electricity" value="electricity">Electricity</option>
+                        <option id="evolution" value="evolution">Evolution</option>
+                        <option id="forces" value="forces">Forces</option>
+                        <option id="light" value="light">Light</option>
+                        <option id="materials" value="materials">Materials</option>
+                        <option id="nature" value="nature">Nature</option>
+                        <option id="rocks" value="rocks">Rocks</option>
+                        <option id="scientists" value="scientists">Scientists</option>
+                        <option id="sound" value="sound">Sound</option>
+                        <option id="space" value="space">Space</option>
+                        <option id="states" value="states">States</option>
+                    </optgroup>
+
+                </select>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>The book should be for children over...</legend>
+                    <input id="ageInput" type="number" name="lowerAge" min="3" max="18" step="1" value="3" id="lowerAge"><label id="ageLabel" for="lowerAge"> years old</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>The books should have been published...</legend>
+                    <input type="radio" name="published" value="none" id="none" checked><label for="none">Whenever</label><br>
+                    <input type="radio" name="published" value="bef2000" id="bef2000"><label for="bef2000">Before 2000</label><br>
+                    <input type="radio" name="published" value="aft2000" id="aft2000"><label for="aft2000">After 2000</label><br>
+            </fieldset>
+            <input class="submit" type="submit"><input class="submit" formaction="randombook.php" type="submit" value="Show me a random book..."> 
+        </form>   
+    </main>
+    <footer>
+        <div>Back to <a href="http://www.thymeforphonics.co.uk">Thyme For Phonics</a></div><img src="images/thymeLogo.png" alt="Thyme for Phonics Logo">
+    </footer>
+
+    
+</body>
+</html>
