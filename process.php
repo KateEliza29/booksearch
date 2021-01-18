@@ -22,7 +22,7 @@
             <?php //print_r($_POST);
             
                 //Establish database connection.
-                $link = mysqli_connect("shareddb-z.hosting.stackcp.net", "bookSearch-313635128b", "u953gkcocp", "bookSearch-313635128b");
+                $link = mysqli_connect("", "", "", "");
                 
                 //Set up variables.
                 $topic = $_POST["topic"];
